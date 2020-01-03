@@ -1,7 +1,7 @@
 """-------------------------------------------------------------
 a program that calculate the DFT (Descrete Fourier Transform)---
 author: mohammadreza mohammadi :)                            ---
-9612325089                                                   ---
+                                                             ---
 """                                                         
 # import necessary libraries
 import simpleaudio as sa
@@ -37,7 +37,7 @@ for i in range(N):
         S[i] += s[j] * np.exp(tmp)
 
 "--------------------------------------------------------------------"
-# DFT diagrams
+# DFT graphs
 plt.figure("Descrete fourier transform")
 plt.subplot(3, 1, 1)
 plt.scatter([i for i in range(N)], [j for j in s])
@@ -65,7 +65,7 @@ plt.grid(True)
 plt.tight_layout()
 plt.show()
 "----------------------------------------------------"
-# FFT diagrams
+# FFT graphs
 plt.figure("Fast Fourier Transform")
 plt.subplot(3, 1, 1)
 plt.scatter([i for i in range(N)], [j for j in s])
